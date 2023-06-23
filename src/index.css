@@ -1,0 +1,11 @@
+@import url('./vendor/normalize.css');
+@import url('./vendor/font-inter.css');
+
+* {
+  font-family: 'Inter', Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: #202020;
+}

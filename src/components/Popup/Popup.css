@@ -1,0 +1,60 @@
+.popup {
+  opacity: 0;
+  visibility: hidden;
+  padding: 30px;
+  display: flex;
+  position: fixed;
+  min-width: 300px;
+  bottom: 50px;
+  right: 50px;
+  background-color: #2F2F2F;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  transition: .2s all linear;
+}
+
+.popup_active {
+  opacity: 1;
+  visibility: visible;
+  right: 50px;
+}
+
+.popup__text {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.popup__close {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: none;
+  background-image: url('../../images/close-icon.svg');
+  cursor: pointer;
+  transition: .1s opacity linear;
+}
+
+.popup__close:hover {
+  opacity: .6;
+}
+
+@media screen and (max-width: 768px) {
+  .popup {
+    right: 25px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .popup {
+    min-width: auto;
+    right: 25px;
+    left: 25px;
+  }
+}

@@ -1,0 +1,148 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  padding: 74px 30px 70px;
+  align-items: center;
+}
+
+.profile__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.profile__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 123px;
+  max-width: 470px;
+  width: 100%;
+}
+
+.profile__form-block {
+  width: 100%;
+}
+
+.profile__fieldset {
+  width: 100%;
+  padding: 16px 0;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #424242;
+}
+
+.profile__label {
+  min-width: 50px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #FFFFFF;
+}
+
+.profile__input {
+  background-color: transparent;
+  border: none;
+  flex-grow: 1;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.profile__error {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #EE3465;
+}
+
+.profile__input:focus {
+  outline: none;
+  border-radius: 4px;
+}
+
+.profile__btn {
+  background-color: transparent;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: .1s opacity linear;
+}
+
+.profile__btn_type_submit {
+  margin-top: 10px;
+}
+
+.profile__btn_type_exit {
+  margin-top: 16px;
+  font-weight: 500;
+  color: #EE3465;
+}
+
+.profile__btn:hover {
+  opacity: .7;
+}
+
+.profile__btn_disable {
+  cursor: default;
+  opacity: .4;
+}
+
+.profile__btn_disable:hover {
+  opacity: .4;
+}
+
+.profile__submit {
+  margin-top: 270px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  .profile__form {
+    margin-top: 96px;
+    max-width: 410px;
+  }
+
+  .profile__btn_type_submit {
+    margin-top: 210px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .profile {
+    padding: 70px 30px 40px;
+    justify-content: flex-start;
+  }
+
+  .profile__form {
+    margin-top: 80px;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  .profile__btn_type_submit {
+    margin-top: 50px;
+  }
+}

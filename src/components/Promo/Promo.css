@@ -1,0 +1,137 @@
+.promo {
+  margin-top: -74px;
+  padding: 149px 0 50px;
+  background-color: #073042;
+}
+
+.promo__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo__title {
+  margin: 0;
+  max-width: 640px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 58px;
+  color: #fff;
+}
+
+.promo__subtitle {
+  margin: 36px 0 0;
+  padding: 0;
+  max-width: 310px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  opacity: .5;
+  color: #fff;
+}
+
+.promo__image {
+  width: 310px;
+}
+
+.promo__btn {
+  margin: 146px 0 0;
+  padding: 10px 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  border: 1px solid rgba(255, 255, 255, .6);
+  border-radius: 3px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  transition: .1s all linear;
+}
+
+.promo__btn:hover {
+  color: #000;
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+
+@media screen and (max-width: 870px) {
+  .promo__title {
+    margin-top: 48px;
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promo {
+    padding: 214px 0 76px;
+  }
+
+  .promo__content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .promo__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo__title {
+    margin-top: 48px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .promo__subtitle {
+    margin: 22px auto 0;
+    max-width: 260px;
+    text-align: center;
+  }
+
+  .promo__btn {
+    margin: 92px 0 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .promo {
+    padding: 160px 0 76px;
+  }
+
+  .promo__title {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+
+  .promo__image {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .promo {
+    padding: 144px 0 30px;
+  }
+
+  .promo__image {
+    width: 210px;
+  }
+
+  .promo__title {
+    margin-top: 44px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .promo__subtitle {
+    margin: 24px auto 0;
+  }
+
+  .promo__btn {
+    margin: 80px 0 0;
+  }
+}

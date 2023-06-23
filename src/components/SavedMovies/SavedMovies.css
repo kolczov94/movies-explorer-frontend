@@ -1,0 +1,12 @@
+.saved-movies {
+  flex-grow: 1;
+}
+
+.saved-movies__search {
+  padding: 70px 0 80px;
+  border-bottom: 1px solid #424242;
+}
+
+.saved-movies__list {
+  margin: 80px 0 0;
+}

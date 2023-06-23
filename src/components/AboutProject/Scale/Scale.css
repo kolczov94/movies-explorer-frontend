@@ -1,0 +1,54 @@
+.scale {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.scale__lable {
+  padding: 9px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  background-color: #303030;
+  color: #fff;
+}
+
+.scale__lable_color_green {
+  background-color: #3DDC84;
+  color: #000;
+  min-width: 100px;
+}
+
+.scale_descr {
+  margin-top: 14px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #8B8B8B;
+}
+
+@media screen and (max-width: 768px) {
+  .scale_descr {
+    font-weight: 400;
+    color: #A0A0A0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .scale__lable {
+    padding: 9px 0;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+  }
+
+  .scale_descr {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
